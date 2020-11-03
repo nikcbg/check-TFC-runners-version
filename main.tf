@@ -1,4 +1,5 @@
 resource "null_resource" "release" {
+  
   triggers = {
     static_trigger = "Terraform"
   }
