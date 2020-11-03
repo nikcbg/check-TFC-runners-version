@@ -1,8 +1,8 @@
 resource "null_resource" "release" {
-  
   triggers = {
-    static_trigger = "Terraform"
+    always_run = timestamp()
   }
+  
   provisioner "local-exec" {
     command = "cat /etc/*release"
   }
