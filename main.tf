@@ -10,14 +10,9 @@ resource "null_resource" "release" {
     command = "free -h"
   }
   provisioner "local-exec" {
-   # command = "sudo apt-get update python3" 
     command = "python --version"
+    command = "sudo apt-get update python3.9" 
   }
-  
-  
-  
-  
-  
-  
+
 }
 
