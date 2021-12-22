@@ -11,7 +11,7 @@ resource "null_resource" "release" {
   }
   provisioner "local-exec" {
     #command = "python --version"
-    command = "--upgrade python3.9;python3 -V" 
+    command = "pip3 --version;python3.9 -m pip install --upgrade pip;python3 -V" 
   }
 
 }
