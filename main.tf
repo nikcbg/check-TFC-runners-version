@@ -10,8 +10,7 @@ resource "null_resource" "release" {
     command = "free -h"
   }
   provisioner "local-exec" {
-    #command = "python --version"
-    command = "sudo pip3 --version;python3.9 -m pip install --upgrade pip;python3 -V" 
+    command = "python3 -V" 
   }
 
 }
