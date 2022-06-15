@@ -12,6 +12,9 @@ resource "null_resource" "release" {
   provisioner "local-exec" {
     command = "python3 -V" 
   }
+  provisioner "local-exec" {
+    command = "aws --version" 
+  }
 
 }
 
