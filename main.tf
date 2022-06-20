@@ -16,9 +16,9 @@ resource "null_resource" "release" {
     command = "aws --version" 
   }
   
-  provisioner "local-exec" {
-    command = "az –version" 
-  }
+ # provisioner "local-exec" {
+ #   command = "az –version" 
+ #  }
 
 }
 
